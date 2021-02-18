@@ -1,9 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
+import styled from 'styled-components'
 import Header from './components/Header.js'
 import POTD from './components/POTD.js'
 import Caption from './components/Caption.js'
+
+const StyledApp = styled.div`
+  width: 96%;
+  margin: 2%;
+  padding: 0;
+  min-width: 480px;
+  height: auto;
+  text-align: center;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-item: center;
+
+  
+`
 
 function App() {
   const [nasaData, setNasaData] = useState({})
@@ -21,11 +38,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <StyledApp>
       <Header nasaData={nasaData} />
       <POTD nasaData={nasaData} />
       <Caption nasaData={nasaData} />
-    </div>
+    </StyledApp>
   );
 }
 
