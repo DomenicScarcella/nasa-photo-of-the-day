@@ -7,6 +7,7 @@ import POTD from './components/POTD.js'
 import Caption from './components/Caption.js'
 
 const StyledApp = styled.div`
+  background-color: lightyellow;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -18,8 +19,6 @@ const StyledApp = styled.div`
   flex-direction: column;
   justify-content: center;
   align-item: center;
-
-  
 `
 
 function App() {
