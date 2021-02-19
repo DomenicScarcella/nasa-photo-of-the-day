@@ -6,6 +6,8 @@ const StyledImg = styled.div`
     img {
         border: 6px solid white;
         margin: 12px;
+        max-width: 88vw;
+        min-width: 444px;
         &:hover {
             border: 6px solid blue;
         }

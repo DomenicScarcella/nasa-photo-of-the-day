@@ -29,7 +29,7 @@ export default function Header(props) {
         <StyledHead>
             <p><span className='h'>NASA Photo of the Day</span><br />
             <span className='t'>'{nasaData.title}'</span><br />
-            <span className='n'>Photo by {nasaData.copyright} on {nasaData.date}</span></p>
+            <span className='n'>Photo by {nasaData.copyright}</span></p>
         </StyledHead>
     )
     // return (
