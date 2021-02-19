@@ -7,8 +7,8 @@ import POTD from './components/POTD.js'
 import Caption from './components/Caption.js'
 
 const StyledApp = styled.div`
-  width: 96%;
-  margin: 2%;
+  width: 100%;
+  margin: 0;
   padding: 0;
   min-width: 480px;
   height: auto;

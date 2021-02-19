@@ -2,22 +2,21 @@ import React from 'react';
 import styled from 'styled-components'
 
 const StyledImg = styled.div`
-    width: 100%;
-    height: auto;
-
-    .nasaimg img {
-        border: 2px solid black;
+    background-color: lightblue;
+    img {
+        border: 6px solid white;
+        margin: 12px;
+        &:hover {
+            border: 6px solid blue;
+        }
     }
-
 `
 
 export default function POTD(props) {
     const {nasaData} = props
     return (
         <StyledImg>
-            <div className="nasaimg">
-                <img src={nasaData.url} alt="Photo of the Day from NASA"></img>
-            </div>
+            <img src={nasaData.url} alt="Photo of the Day from NASA"></img>
         </StyledImg>
     )
     // return (
