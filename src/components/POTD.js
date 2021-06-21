@@ -21,9 +21,4 @@ export default function POTD(props) {
             <img src={nasaData.url} alt="Photo of the Day from NASA"></img>
         </StyledImg>
     )
-    // return (
-    //     <div className='potd'>
-    //         <img src={nasaData.url} alt="Photo of the Day from NASA"></img>
-    //     </div>
-    // )
 }

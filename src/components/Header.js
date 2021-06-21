@@ -27,17 +27,10 @@ export default function Header(props) {
     const {nasaData} = props
     return (
         <StyledHead>
-            <p><span className='h'>NASA Photo of the Day</span><br />
-            <span className='t'>'{nasaData.title}'</span><br />
-            <span className='n'>Photo by {nasaData.copyright}</span></p>
+            <p><span className='h'>NASA Photo of the Day</span></p>
+            <p><span className='t'>'{nasaData.title}'</span></p>
+            {nasaData.copyright ?             
+            <p><span className='n'>Photo by {nasaData.copyright}</span></p> : ''}
         </StyledHead>
     )
-    // return (
-    //     <div className='header'>
-    //         <h1>NASA Photo of the Day</h1>
-    //         <div className='titleName'>
-    //             <h3>'{nasaData.title}'<br />Photo by {nasaData.copyright}<br />{nasaData.date}</h3>
-    //         </div>
-    //     </div>
-    // )
 }
