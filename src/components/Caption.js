@@ -29,9 +29,4 @@ export default function Caption(props) {
             }
         </StyledCap>
     )
-    // return (
-    //     <div className='caption'>
-    //         <h5>{nasaData.explanation}</h5>
-    //     </div>
-    // )
 }
